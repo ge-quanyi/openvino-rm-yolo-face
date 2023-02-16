@@ -1,0 +1,3 @@
+/home/quonone/workspace/openvino-yolo5f-rm/cpp/cmake-build-debug/CMakeFiles/detect.dir
+/home/quonone/workspace/openvino-yolo5f-rm/cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/quonone/workspace/openvino-yolo5f-rm/cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

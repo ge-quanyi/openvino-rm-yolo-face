@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ares.iml" filepath="$PROJECT_DIR$/.idea/ares.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/pyopenvino-test.iml" filepath="$PROJECT_DIR$/.idea/pyopenvino-test.iml" />
     </modules>
   </component>
