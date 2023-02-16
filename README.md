@@ -10,3 +10,17 @@ python:
 - openvino
 - torch
 - torchvision
+
+# usage
+**python:**   
+In your python env
+```python
+python main.py
+```
+**c++:**
+```shell
+cd cpp && mkdir build
+cd build
+cmake ..
+make 
+```
