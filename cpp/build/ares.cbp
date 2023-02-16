@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ares"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\opt\intel\;CMake Files\..\..\..\..\..\opt\intel\openvino2022\;CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\;CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/quonone/workspace/openvino-yolo5f-rm/cpp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="detect">
+				<Option output="/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/detect" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quonone/workspace/openvino-yolo5f-rm/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTBB_PREVIEW_WAITING_FOR_WORKERS=1"/>
+					<Add option="-DIE_THREAD=IE_THREAD_TBB"/>
+					<Add directory="/opt/intel/openvino2022/runtime/include"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/opt/intel/openvino2022/runtime/include/ie"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 detect"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="detect/fast">
+				<Option output="/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/detect" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quonone/workspace/openvino-yolo5f-rm/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DTBB_PREVIEW_WAITING_FOR_WORKERS=1"/>
+					<Add option="-DIE_THREAD=IE_THREAD_TBB"/>
+					<Add directory="/opt/intel/openvino2022/runtime/include"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/opt/intel/openvino2022/runtime/include/ie"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 detect/fast"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/quonone/workspace/openvino-yolo5f-rm/cpp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/quonone/workspace/openvino-yolo5f-rm/cpp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j12 -f &quot;/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/main.cpp">
+			<Option target="detect"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../opt/intel/openvino2022/runtime/cmake/InferenceEngineConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\cmake\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../opt/intel/openvino2022/runtime/cmake/InferenceEngineConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\cmake\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../opt/intel/openvino2022/runtime/cmake/OpenVINOConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\cmake\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../opt/intel/openvino2022/runtime/cmake/OpenVINOConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\cmake\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../opt/intel/openvino2022/runtime/cmake/OpenVINOTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\cmake\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../opt/intel/openvino2022/runtime/cmake/OpenVINOTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\cmake\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../opt/intel/openvino2022/runtime/cmake/ngraphConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\cmake\"/>
+		</Unit>
+		<Unit filename="/home/quonone/workspace/openvino-yolo5f-rm/cpp/../../../../../opt/intel/openvino2022/runtime/cmake/ngraphConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\intel\openvino2022\runtime\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,4 +1,4 @@
-# Install script for directory: /home/quonone/workspace/cppopenvino
+# Install script for directory: /home/quonone/workspace/openvino-yolo5f-rm/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/quonone/workspace/cppopenvino/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/quonone/workspace/openvino-yolo5f-rm/cpp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/quonone/workspace/cppopenvino/build",
-		"source" : "/home/quonone/workspace/cppopenvino"
+		"build" : "/home/quonone/workspace/openvino-yolo5f-rm/cpp/build",
+		"source" : "/home/quonone/workspace/openvino-yolo5f-rm/cpp"
 	},
 	"version" : 
 	{
