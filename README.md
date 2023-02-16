@@ -3,7 +3,7 @@ openvino inference based on yolov5-face for rm
 
 # requirements
 c++:
-- openvino-runtime
+- openvino-runtime 2022
 - opencv
 
 python:

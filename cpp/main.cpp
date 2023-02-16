@@ -1,3 +1,6 @@
+//
+// Created by quanyi on 23-2-16.
+//
 #include <opencv2/dnn.hpp>
 #include <openvino/openvino.hpp>
 #include <opencv2/opencv.hpp>
@@ -5,6 +8,8 @@
 
 using namespace std;
 
+///@brief: openvino 测试，待优化的地方：设置结果遍历最大限制参数，减少耗时
+///TODO: 封装成类直接调用；部分代码写得繁琐，适当简化；FP16的使用，现在是FP32
 
 const float SCORE_THRESHOLD = 0.6;
 const float NMS_THRESHOLD = 0.5;
@@ -82,6 +87,7 @@ int main() {
     ov::CompiledModel compiled_model = core.compile_model(model, "CPU");
 
     int i = 0;
+    //循环10次测试帧率
     while(i<10){
         i++;
         auto t0 = std::chrono::steady_clock::now();
@@ -105,7 +111,7 @@ int main() {
         std::cout<< " detections "<< output_tensor.get_shape()<<std::endl;
         auto t1 = std::chrono::steady_clock::now();
         // Step 8. Postprocessing including NMS
-        std::vector<cv::Rect> boxes;
+        std::vector<cv::Rect> boxes; //用于NMS
         std::vector<Armor> armors;
         vector<int> class_ids;
         vector<float> confidences;
@@ -189,6 +195,8 @@ int main() {
             p3.y *= ry;
             p4.x *= rx;
             p4.y *= ry;
+
+
             cout << "Bbox" << i + 1 << ": Class: " << classId << " "
                  << "Confidence: " << confidence << " Scaled coords: [ "
                  << "cx: " << (float) (box.x + (box.width / 2)) / img.cols << ", "
