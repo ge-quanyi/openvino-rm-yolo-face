@@ -17,7 +17,7 @@ find_package(ngraph REQUIRED)
 
 
 
-add_executable(detect main.cpp)
+add_executable(detect main.cpp ovinference.cpp ovinference.h)
 target_link_libraries(detect
         ${OpenCV_LIBS}
         openvino::runtime
